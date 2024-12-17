@@ -16,8 +16,8 @@ from app.main import outdated_products
     ]
 )
 def test_should_return_correct_list_of_outdated_products(
-        mocked,
-        expected
+        mocked: datetime.date,
+        expected: list[str]
 ) -> None:
     products = [
         {
